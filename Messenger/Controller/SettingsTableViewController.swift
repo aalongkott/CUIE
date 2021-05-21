@@ -114,10 +114,13 @@ class SettingsTableViewController: UITableViewController {
             guard let editVC = segue.destination as? EditProfileTableViewController
             else { return }
             
+            guard let image = avatarImage.image else { return }
+            
             editVC.name = profile.name
+            editVC.status = profile.status
             editVC.bio = profile.bio ?? ""
             editVC.surname = profile.surname
-            editVC.image = avatarImage.image!
+            editVC.image = image
         }
     }
     
