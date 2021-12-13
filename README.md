@@ -94,7 +94,7 @@ private func logIn() {
             debugPrint(response)
         }
        
-    }
+}
 ```
 ### MessageKit
 How to setup our chatroom in MessageBoardController.swift
@@ -105,7 +105,7 @@ private func setCollectionView() {
         messagesCollectionView.messagesDisplayDelegate = self
         messagesCollectionView.messageCellDelegate = self
         navigationItem.largeTitleDisplayMode = .never
-    }
+}
 ```
 ### Kingfisher
 We use Kingfisher framework to get images from the server. With this frame work, we can quickly set up the image for our UIImageView.
@@ -121,7 +121,7 @@ private func setAvatar(avatarLink: String?) {
         } else {
             self.AvatarImageView.image = UIImage(named: "avatar")
         }
-    }
+}
 ```
 
 ## Frameworks
